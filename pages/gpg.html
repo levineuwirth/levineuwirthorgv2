@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+[jeans@enigma pages]$ ls
+contact.html  contact.html~  gpg.html  index.html  index.html~
+[jeans@enigma pages]$ cd ..
+[jeans@enigma levineuwirthorgv2]$ ls
+LICENSE  misc  pages  README.md
+[jeans@enigma levineuwirthorgv2]$ cd misc
+[jeans@enigma misc]$ ls
+headertemplate.html  headertemplate.html~
+[jeans@enigma misc]$ cat headertemplate.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="#about">About</a> <a href="#contact">Contact</a> <a href="#cv">CV</a> <a href="#links">Links</a> <a href="#projects">Music</a> <a href="#music">Projects</a> <a href="#writing">Writing</a></nav></header>
+
+ <div>
+<section id="only" class="only">
+<h2>This is my only GPG key</h2>
+<p>Any other key originating from any other source is that of an impostor. My key will always be publically accessible and posted in <span style="text-decoration: underline;">precisely this</span> location. If we don't email regularly, you won't receive automated messages from me when I change the key; check back frequently to make sure you use the most up-to-date one.</p>
+</section>
+<p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+<p>xjMEYw0NIRYJKwYBBAHaRw8BAQdADR++EP+ENf143YCIYfJ9hsvvECChdqT/ YrQibcP5itjNKWxuQGxldmluZXV3aXJ0aC5vcmcgPGxuQGxldmluZXV3aXJ0 aC5vcmc+wo8EEBYKACAFAmMNDSEGCwkHCAMCBBUICgIEFgIBAAIZAQIbAwIe AQAhCRCwGgGtG1yWYxYhBM2QrpY4O7r0FaHXQLAaAa0bXJZjqVMA/i6PkQSa 3gk9Pr4c26BQwKZV67r6jfsaiEux6/wJMaBAAPwNAgJSeLCzIEYhFa/GTX8i HVixiNVKdrYXVtxsKbyKD844BGMNDSESCisGAQQBl1UBBQEBB0BwWqxJhZj9 0nAWR0Zvkp00m3i5Lqf8EFX9roMGRc8TewMBCAfCeAQYFggACQUCYw0NIQIb DAAhCRCwGgGtG1yWYxYhBM2QrpY4O7r0FaHXQLAaAa0bXJZjwawA/11/ZEhJ 9qA5shS6sGybR849992HXrL9By6qh3y2b4ClAP4wWbq3g9FaBnv9wM7gK/We aQNhSeoDPH3drp03E6lbDA== =ha8w</p>
+<p>-----END PGP PUBLIC KEY BLOCK-----</p>
+</div>
