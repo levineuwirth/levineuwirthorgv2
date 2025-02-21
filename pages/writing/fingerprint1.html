@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Neuwirth's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="cv.html">CV</a> <a href="links.html">Links</a> <a href="music.html">Music</a> <a href="projects.html">Projects</a> <a href="writing.html">Writing</a></nav></header>
+<section id="about" class="about">
+<div style="text-align: center;">
+<h2 style="text-align: center;">A brief introduction to fingerprinting</h2>
+<span style="color: #0000ff;">By: Levi Neuwirth, 21 February 2025</span></div>
+<div>
+<section class="writing"></section>
+<section id="what1" class="what1">
+<h3>Introduction</h3>
+<p>In light of recent changes to Google policy allowing the use for third-party fingerprinting as a supercession of third-party cookies (which are considerably easier to detect and block), I wanted to take some time to explain what fingerprinting is, how it works, what possible mitigations exist, and present some ideas of how privacy-concerned digital citizens can move forward.</p>
+</section>
+<section id="what2" class="what2">
+<h3>What is fingerprinting?</h3>
+<p>You may be familiar with the idea that fingerprints in the physical world at a crime scene are later used as admissible evidence of who committed a crime. That is, fingerprints are unique enough to identify someone and determine guilt beyond a reasonable doubt! What we denote <strong>"fingerprinting"</strong> is a variety of techniques that developers of web applications can use to do something very similar - track your identity (and thus associate it with your activity) across sessions and across websites. Notably, you don't have to be authenticated to a service for fingerprinting to work - they know who you are whether you are using an account or not.</p>
+<p>The traditional way that websites tracked users was to use specific cookies. Not all cookies are used for tracking - for example, when you save your password to prevent the need for repeated authentication on a website, a cookie is the means of accomplishing this. Fingerprinting began as an attempt to track without the need for cookies. This need has been exacerbated with developments like Apple's <a href="https://support.apple.com/en-us/102420">ATT</a>, which allowed users to opt out of tracking cookies on a system-wide level without the need for more technical configuration in the process.</p>
+<p>You can see your browser's fingerprint right now by using the <a href="https://www.eff.org/">EFF</a>'s <a href="https://coveryourtracks.eff.org/">Cover Your Tracks</a> tool.</p>
+</section>
+<section id="how" class="how">
+<h3>How does fingerprinting work?</h3>
+<p>There are many different methods which can be used to generate a fingerprint that is unique to your browser. In most cases, many different methods are used and the results combined. What the methods tend to have in common is to use seemingly innocuous metrics in cleverly abusive ways. Here is a brief and entirely noncomprehensive list of ways you might be fingerprinted:</p>
+<ul>
+<li><strong>Device Specifications</strong>: your operating system and its version, your device's screen resolution, your device's video and audio devices, your device's battery level, CPU core count, etc. Pretty self-explanatory what these can give away about who you are over time, as they are mostly persistent.</li>
+<li><strong>Fonts:</strong> It may seem entirely innocent that a website would need to know what fonts are installed on your device - wouldn't this be a prerequisite for displaying text? Unfortunately, this isn't really the case. Websites will rapidly display text in many different fonts and query whether the amount of space on the screen the result took changed (with JavaScript). This gives the website an idea of what fonts you have installed, which&nbsp;is likely to be <em>suprisingly unique&nbsp;</em>to your device.</li>
+<li><strong>Time Zone and Languages:&nbsp;</strong>Again, there are innocent reasons for giving this data away, but when combined with other metrics they can be useful. Best practice is to only have your browser in English when possible as it is by far the international language of the internet and reveals the least information.</li>
+<li><strong>Browser Extensions:&nbsp;</strong>We'll talk about these in the below section.</li>
+</ul>
+</section>
+<section id="fix" class="fix">
+<h3>Possible mitigations</h3>
+<blockquote>
+<p>"If you change the world in even the slightest way, then you have leaked information about yourself in principle."</p>
+</blockquote>
+<p>The above quote comes from <a href="https://gwern.net/death-note-anonymity">Gwern's brilliant Information Theory-based analysis of anonymity in the anime series Death Note.</a> It applies here really well: the actions that one takes to mitigate and resist fingerprinting, if not taken with extreme care, may actually result in you being easier to fingerprint.</p>
+<h4>A warning on browser extensions</h4>
+<p>Many people use browser extensions such as <a href="https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/">CanvasBlocker</a> to prevent fingerprinting. However, one must keep in mind that without care, websites will (usually) be able to determine which extensions are installed. If you have 20 different privacy-focused extensions installed, your set of extensions is likely unique to you. Especially when combined with the other aforementioned fingerprinting data, this is hurting you more than it helps.</p>
+<h4>Your browser is the most important</h4>
+<p>The most important action you can take to resist fingerprinting on desktops and laptops is to use a privacy-focused browser with fingerprinting protection built in. This essentially leaves you the choice between <a href="https://brave.com/">Brave</a>, <a href="https://librewolf.net/">LibreWolf</a>, <a href="https://mullvad.net/en/browser">Mullvad Browser</a>, or <a href="https://www.torproject.org/">Tor</a>. (<a href="https://privacytests.org/">Have a look here and you'll see why I only mention these.</a>) Note that Firefox alone is not resistant to fingerprinting, though it can be hardened (this is exactly what both LibreWolf and Mullvad do). Tor accomplishes their fingerprinting resistance differently than the others out of necessity due to the nature of the network - <a href="https://tb-manual.torproject.org/anti-fingerprinting/">you can read about this here</a>.</p>
+<p>This isn't an article about which web browser is best - that is not only a topic with a level of contention close to the <a href="https://en.wikipedia.org/wiki/Editor_war">editor war</a>, but it is also a matter of your own circumstances. What is important is that if you care about resisting fingerprinting, you use one of these browsers. My personal choice is LibreWolf. You should additionally always use adblocking, and consider doing so on a network-wide basis through something like a <a href="https://pi-hole.net/">Pi-hole</a> to help mitigate fingerprinting on other devices.</p>
+<h4>About mobile devices</h4>
+<p>It is much harder to resist fingerprinting on mobile devices such as smartphones and tablets. On iOS, every browser is a descendant of Apple's own core browser components, severely limiting what can be done. On Android, anything that you do is already going to be compromised by Google regardless of what browser you use (unless you are running something like Graphene, in which case you don't need this article!).</p>
+<p>My only advice here is to try to limit how much browsing you do on mobile devices and keep it to the desktop when possible.</p>
+</section>
+</div>
+<section id="on" class="on">
+<h3>Moving Forward</h3>
+<p>It was the power of users collectively rising up and adopting anti-tracking technologies like adblocking that, at least in Google's view, rendered third-party cookies obsolete. If we wish to do the same for fingerprinting, we must all shift to using browsers which are resistant to fingerprinting, to the point where the amount gained from fingerprinting is minimal. </p>
+<p>The best things that we can do are to first and foremost ensure that our own devices and configurations are resistant to this invasive and downright creepy technology. Apart from that, it's helpful to spread the word. Fingerprinting is a covert technology - it runs invisibly in the background when you browse hoping you'll never even know it exists - if we spread the word, I think we will find that folks are willing to step up their privacy game accordingly. The name of the game is spreading awareness.</p>
+<p>&nbsp;</p>
+<p><a href="https://securehomes.esat.kuleuven.be/~gacar/persistent/the_web_never_forgets.pdf">The landmark paper on fingerprinting "The Web Never Forgets"</a></p>
+</section>
+</section>
+</div>

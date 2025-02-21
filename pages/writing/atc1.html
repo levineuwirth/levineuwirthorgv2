@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Neuwirth's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="cv.html">CV</a> <a href="links.html">Links</a> <a href="music.html">Music</a> <a href="projects.html">Projects</a> <a href="writing.html">Writing</a></nav></header>
+<section id="about" class="about">
+<div style="text-align: center;">
+<h2 style="text-align: center;">Computers and transportation-automation: a dangerous game?</h2>
+<span style="color: #0000ff;">By: Levi Neuwirth, 31 January 2025</span></div>
+<div>
+<section class="writing"></section>
+<section id="mem" class="mem">
+<h3>In Memoriam</h3>
+<p>This article was prompted by the tragic loss of life that occurred as a result of American Eagle Flight 5342 colliding with a military helicopter in the capital of my nation. I wish to humbly dedicate this writing to those who lost their lives, and those who lost someone they loved in this tragic event.</p>
+</section>
+<section id="tcp" class="tcp">
+<h3>Open Protocols</h3>
+<p>Many of the foundations of modern computing are based upon open protocols. The internet, for example, came together not when initial networks of computers were founded for the first time - it came together when there was a unified protocol (<a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">TCP/IP</a>) specifying how computers should connect. Of vital importance is that the protocol is entirely open and accessible - students like me who implemented TCP/IP as a project can use the RFC specifications (<a href="https://datatracker.ietf.org/doc/html/rfc9293">e.g. that of TCP</a>) that are used in professional implementations. Furthermore, TCP/IP is the same across platforms. This is extremely important: Microsoft Windows, which typically likes to do computing in a manner that is contrary to <a href="https://en.wikipedia.org/wiki/POSIX">POSIX</a> / other operating systems, had to implement TCP/IP as specified and could not create their own proprietary protocol for internet communications. The same goes for Apple and any other platform which is capable of internet communications.</p>
+<p>What would the world look like if there was no unified TCP/IP, or if TCP/IP was proprietary? What if we did receive TCP/IP, but Tim Berners-Lee was not generous enough to give us an open HTTP? In these cases we would not have the internet as we know it. Corporate interests would drive the different software companies into making their own protocols, with closed-source codebases never to be seen by an outsider. Connecting across different platforms would likely take years of countless people reverse-engineering, in a manner similar to <a href="https://github.com/reactos/reactos">ReactOS</a> reverse engineering the Windows API.</p>
+</section>
+<section id="atc" class="atc">
+<h3>Air Traffic Control</h3>
+<p>What does any of the above have to do with Air Traffic Control? Well, inevitably, there is going to be a push to automate air traffic control after this incident. Preliminary releases of the ATC audio and communications from the FAA seem to present the conclusion that the combination of an understaffed tower and poor communications to the Helicopter from ATC led to the incident. (This is only <strong>speculatory</strong>; see the official findings of the FAA when they are released for the latest information on causes of the incident.) In principle, there is no reason that computers could not do the task that human controllers currently do. In fact, one might argue that, given the percentage of aviation incidents that are at least partially, if not fully, caused by human error, automation of all air transportation may be the safest path forward.</p>
+<p>The pitfall of this is that there are many different manufacturers of planes, and many different airports governed by <a href="https://en.wikipedia.org/wiki/Air_navigation_service_provider">different bodies</a> (The FAA only has jurisdiction over the United States; of course, other nations have their own governing bodies). Communication between aircraft and coordination of flight operations to ensure safety is the entire premise of air traffic control. In a world where, say, Boeing and Airbus have different protocols for their aircraft systems communicating with ATC and with other aircraft, is the net change in safety positive or negative? I would make a strong argument that in this case the net change would be negative. Consider also an international flight across continents. If the continents have different protocols for an aircraft's systems contacting ATC due to different proprietary implementations, at what point must the aircraft switch, and how would the aircraft ensure a safe hand-off?</p>
+<h4>Standardization is already present</h4>
+<p>It turns out that, in response to aviation incidents such as the <a href="https://en.wikipedia.org/wiki/Tenerife_airport_disaster#Communication_misunderstandings">Tenerife disaster</a>, ATC communications are already highly standardized to eliminate (to the extent possible) ambiguity. There have been multiple severe aviation incidents caused by miscommunications between pilots and ATC or misunderstandings of ATC communications on behalf of pilots. Much of this standardization has been at the hand of <a href="https://icao.int">ICAO</a>.</p>
+  <h4>We need an open consortium to develop specifications for computerized ATC communications</h4>
+ <p>I have presented a portrayal of the hypothetical dangers of computerizing air traffic control without standardization above. To effectively allow computers to conduct air traffic control, we need a standardized solution that is open and accessible to all manufacturers, contractors, government agencies, and pilots. I would urge the ICAO to begin this process of forming a cross-disciplinary consortium of engineers, pilots, air traffic controllers, and computer scientists to design and implement such a specification. Safety must come above profit - it is vital for the safety of the countless people who fly on any given day that privatization of such a protocol and its specification does not occur. </p>
+</section>
+<section id="car" class="car">
+<h3>What about self-driving vehicles?</h3>
+ <p>One might ask whether a similar argument should be made for autonomous automobiles. However, the driving of automobiles is not so highly coordinated and standardized as air traffic. There are many more manufacturers of automobiles than there are of aircraft, and there is more variation along with much higher density of automobiles in a given location. </p>
+  <h4> Beware of "AI" as a blanket term </h4>
+  <p> In terms of the technological manner in which autonomous vehicles are implemented, these are typically machine learning (broadly speaking, a subset of artificial intelligence) systems. In contrast, while many media outlets will likely propose AI solutions for air traffic control, in fact there is likely not a reason to use an artificial intelligence based system for ATC over a procedural one. There is a multitude of data on which an AI traffic controller could be trained on, but in principle information about the context in which decisions are made might be lost to this process - there is no easy way of verifying such a thing. ATC operations could be implemented in a strictly procedural manner in which algorithms which directly implement logic for different situations that could arise are present. This seems to be a more viable long-term option to me at first glance.</p>
+ <p> To present a non-technical analogy, an AI air traffic controller would broadly speaking be the equivalent of a human being trained only by looking at all historical data of flights and learning to emulate the historic situations that have arised, without context. A procedural implementation would be how current controllers are trained - to follow logical steps based on what situation is unfolding. The training for a human thus would not revolve around simply studying the historical data on previous flights and their received ATC communications, but rather studying situations and procedures that can be applied and generalized to any flight.</p>
+  <h4> Differences in paradigm </h4>
+<p>This fundamental distinction of the difference in paradigm between automating the task of driving an automobile and automating air traffic control is why self-driving vehicles not only do not need such a level of standardization, but why it would also be very difficult to achieve such a standardization even if it was necessary. The machine learning models that power autonomous systems in vehicles come as the result of unique training data and many very nuanced choices in implementation. Even if the procedure to follow in training a model was standardized, the models would inevitably differ. Thus, the question of implementing safe autonomous automobiles is a very unique one and has its own safety and ethical concerns, distinct from those of air traffic control.</p>
+</section>
+</div>

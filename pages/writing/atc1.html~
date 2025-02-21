@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Neuwirth's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="cv.html">CV</a> <a href="links.html">Links</a> <a href="music.html">Music</a> <a href="projects.html">Projects</a> <a href="writing.html">Writing</a></nav></header>
+<section id="about" class="about">
+<div style="text-align: center;">
+<h2 style="text-align: center;">Computers and transportation-automation: a dangerous game?</h2>
+<span style="color: #0000ff;">By: Levi Neuwirth, 31 January 2025</span></div>
+<div>
+<section class="writing"></section>
+<section id="mem" class="mem">
+<h3>In Memoriam</h3>
+<p>This article was prompted by the tragic loss of life that occurred as a result of American Eagle Flight 5342 colliding with a military helicopter in the capital of my nation. I wish to humbly dedicate this writing to those who lost their lives, and those who lost someone they loved in this tragic event.</p>
+</section>
+<section id="tcp" class="tcp">
+<h3>Open Protocols<h/h3>
+<p>Many of the foundations of modern computing are based upon open protocols. The internet, for example, came together not when initial networks of computers were founded for the first time - it came together when there was a unified protocol (TCP/IP) specifying how computers should connect. Of vital importance is that the protocol is entirely open and accessible - students like me who implemented TCP/IP as a project can use the Rfc specifications that are used in professional implementations. Furthermore, TCP/IP is the same across platforms. This is extremely important: Microsoft Windows, which typically likes to do computing in a manner that is contrary to POSIX / other operating systems, had to implement TCP/IP as specified and could not create their own proprietary protocol for internet communications. The same goes for Apple and any other platform which is capable of internet communications. </p>
+<p> What would the world look like if there was no unified TCP/IP, or if TCP/IP was proprietary? What if we did receive TCP/IP, but Tim Berners-Lee was not generous enough to give us an open HTTP? In these cases we would not have the internet as we know it. Corporate interests would drive the different software companies into making their own protocols, with closed-source codebases never to be seen by an outsider. Connecting across different platforms would likely take years of countless people reverse-engineering, in a manner similar to ReactOS reverse engineering the Windows API. </p>
+</section>
+<section id="atc" class="atc">
+  <h3>Air Traffic Control</h3>
+  <p> What does any of the above have to do with Air Traffic Control? Well, inevitably, there is going to be a push to automate air traffic control after this incident. Preliminary releases of the ATC audio and communications from the FAA seem to present the conclusion that the combination of an understaffed tower and poor communications to the Helicopter from ATC led to the incident. (This is only speculatory; see the official findings of the FAA when they are released for the latest information on causes of the incident.) In principle, there is no reason that computers could not do the task that human controllers currently do. In fact, one might argue that, given the percentage of aviation incidents that are at least partially, if not fully, caused by human error, automation of all air transportation may be the safest path forward. </p>
+  <p>The pitfall of this is that there are many different manufacturers of planes, and many different airports governed by different bodies (The FAA only has jurisdiction over the United States; of course, other nations have their own governing bodies). Communication between aircraft and coordination of flight operations to ensure safety is the entire premise of air traffic control. In a world where, say, Boeing and Airbus have different protocols for their aircraft systems communicating with ATC and with other aircraft, is the net change in safety positive or negative? I would make a strong argument that in this case the net change would be negative. Consider also an international flight across continents. 2</p>
+  </section>
+</div>
