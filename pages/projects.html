@@ -1,144 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levi Neuwirth's Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Levi Neuwirth's Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
 
-        header {
-            background: #007bff;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
-        }
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
 
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
+    nav {
+      margin: 20px 0;
+      text-align: center;
+    }
 
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
 
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 20px auto;
-        }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
 
-        section h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
+    section h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+    }
 
-        .about p, .projects p, .contact p {
-            margin-bottom: 15px;
-        }
+    .projects img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
 
-        .projects img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
 
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+    .contact form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
 
-        .contact form {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-        }
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
 
-        .contact form input, .contact form textarea, .contact form button {
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+    .contact form button {
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
 
-        .contact form button {
-            background: #007bff;
-            color: white;
-            cursor: pointer;
-            border: none;
-        }
-
-        .contact form button:hover {
-            background: #0056b3;
-        }
-    </style>
+    .contact form button:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
- <header>
-<h1>Personal Website of Levi Neuwirth</h1>
-<nav><a href="#about">About</a> <a href="#contact">Contact</a> <a href="#cv">CV</a> <a href="#links">Links</a> <a href="#projects">Music</a> <a href="#music">Projects</a> <a href="#writing">Writing</a></nav></header>
- <p>This is a list of notable Computer Science / Mathematics projects which I have completed or will complete. Source code, if not readily available on my GitHub, is available upon request - <a href="#contact">please reach out</a>!</p>
-<p>If you are looking for music compositions, <a href="#music">see here</a>.</p>
- <h2>Completed Projects</h2>
-<section id="neuropose" class="neuropose">
-<h3>NeuroPose</h3>
-<strong><span style="color: #0000ff;">Python, TensorFlow, MATLAB, JavaScript, HTML</span></strong>
-<p>NeuroPose is a comprehensive research model that studies how patients recover from neurological ailments with the hopes of gaining insights into the recovery process and treatment effectivity. NeuroPose combines pose estimation in three dimensions with innovative post-processing techniques. NeuroPose can be hosted as a server or instantiated locally. The pose estimator is written in Python with TensorFlow, while post-processing uses a combination of Python and MATLAB, and the default server environment uses some basic HTML and JavaScript.</p>
-<p>My work on NeuroPose has been sponsored by Brown University's UTRA program and performed in collaboration with the lab of Dr. Liqi Shu. I would like to thank Dr. Shu and the other members of the lab for their support and assistance in bringing this meaningful project to life.</p>
-</section>
-<section id="tcp" class="tcp">
-<h3>TCP/IP</h3>
-<p><strong><span style="color: #0000ff;">Go</span></strong></p>
-<p>My implementation of TCP/IP closely follows the latest RFC specification and is completed in Go. It handles everything from simulating routers with the RIP protocol to allowing interfaces to send and receive anything from individual packets to fully-fledged files. It additionally implements TCP retransmissions and Zero-Window Probing, and will be expanded to include congestion control in the near future.</p>
-</section>
-<section id="boot" class="boot">
-<h3>LevOS BootLoader</h3>
-<p><strong><span style="color: #0000ff;">x86 Assembly<br /></span></strong></p>
-<p>The LevOS BootLoader is a two-stage bootloader written entirely in x86 assembly. It loads relevant sectors into the memory, integrates with BIOS functions to check hardware specifications, and initializes the system to the point that a kernel can safely be loaded. This bootloader prioritizes minimalism and efficiency and is intended to be used with the future LevOS (see below).</p>
-</section>
-<section id="aim" class="aim">
-<h3><a href="https://github.com/levineuwirth/riskofaim">Risk of Aim</a></h3>
-<p><strong><span style="color: #0000ff;">C#, GLSL<br /></span></strong></p>
-<p>Risk of Aim is an aim-training video game that incorporates roguelike elements to ensure a fun but competitive experience. The game incorporates 3D graphics and complex mechanics systems to track player health, accuracy, and activated abilities.</p>
-</section>
-<h2>Current Projects</h2>
-<section id="weenix" class="weenix">
-<h3>Weenix</h3>
-<p><strong><span style="color: #0000ff;">C, x86 Assembly<br /></span></strong></p>
-<p>Weenix is the culmination of Brown's infamous CS169 Operating Systems Lab. I will be completing this kernel over the Spring 2025 semester. It will include virtual memory, paging, and a basic shell.</p>
-</section>
-<section id="strat" class="strat">
-<h3>Stratagem</h3>
-<p><strong><span style="color: #0000ff;">Rust<br /></span></strong></p>
-<p>Stratagem is an upcoming grand-strategy video game inspired by those of Paradox Interactive that I have been sporadically developing for nearly two years.</p>
-</section>
-  <h2>Future Projects</h2>
-  <section id="levos" class="levos">
-<h3>LevOS</h3>
-<p><strong><span style="color: #0000ff;">x86 Assembly, C, Rust, Go<br /></span></strong></p>
-<p>My plan for my capstone requirement at Brown University is to combine many elements of computer systems that I have implemented in different places into one enormous project. This will involve the creation of a largely working operating system. The bootloader is already implemented. Over the summer of 2025 and into the fall semester I will be adapting Weenix into a customized kernel that incorporates my own previous implementation of system calls for I/O, process management, and a customized threads library. Once this is done, I will attempt to port my TCP/IP implementation to LevOS, resulting in a full system of my own design.</p>
-</section>
-</div>
+
+<body>
+  <header>
+    <h1>Personal Website of Levi Neuwirth</h1>
+    <nav><a href="#about">About</a> <a href="#contact">Contact</a> <a href="#cv">CV</a> <a href="#links">Links</a> <a href="#projects">Music</a> <a href="#music">Projects</a> <a href="#writing">Writing</a></nav></header>
+  </header>
+
+  <section>
+    <p>This is a list of notable Computer Science / Mathematics projects which I have completed or will complete. Source code, if not readily available on my GitHub, is available upon request - <a href="#contact">please reach out</a>!</p>
+    <p>If you are looking for music compositions, <a href="#music">see here</a>.</p>
+
+    <h2>Completed Projects</h2>
+
+    <section id="neuropose">
+      <h3>NeuroPose</h3>
+      <strong><span style="color: #0000ff;">Python, TensorFlow, MATLAB, JavaScript, HTML</span></strong>
+      <p>NeuroPose is a comprehensive research model that studies how patients recover from neurological ailments with the hopes of gaining insights into the recovery process and treatment effectivity. NeuroPose combines pose estimation in three dimensions with innovative post-processing techniques. NeuroPose can be hosted as a server or instantiated locally. The pose estimator is written in Python with TensorFlow, while post-processing uses a combination of Python and MATLAB (currently being ported to GNU Octave), and the default server environment uses some basic HTML and JavaScript on the frontend with a backend written exclusively in Rust.</p>
+      <p>NeuroPose has been an extensive project that has fostered my full-stack software engineering skills. It has required intensive work at all stages - the frontend, backend, and actual research model, along with mathematical research on the underlying mechanisms of the model and manners of sound statistical analysis on it. NeuroPose is licensed under the AGPL verison 3.0 as free software; hardware for the official public instance has arrived at Brown, and we are working on deploying it within the near future. (Exciting!)</p>
+      <p>My work on NeuroPose has been sponsored by Brown University's UTRA program and performed in collaboration with the lab of Dr. Liqi Shu. I would like to thank Dr. Shu and the other members of the lab for their support and assistance in bringing this meaningful project to life.</p>
+    </section>
+
+    <section id="weenix">
+      <h3>Weenix</h3>
+      <strong><span style="color: #0000ff;">C</span></strong>
+      <p>Weenix is a full operating system for the x86-64 / amd64 architecture. It implements virtual memory, a fully-featured filesystem, most typical Unix system calls, a VFS layer, and various userland programs. This project was initiated through Brown's infamous CS169 Operating Systems Labratory, but I have expanded my implementation of Weenix beyond the standard requirements for that course. For instance, my Weenix is both userland and kernel preemptible. Weenix serves as the base from which I will engineer the initial version of LevOS, which among other things will include an implementation of Unix signals, a port of my networking stack, and various other features and upgrades.</p>
+      <p>I'll be recording an interactive demo of Weenix during the summer of 2025.</p>
+    </section>
+
+    <section id="tcp">
+      <h3>TCP/IP, DNS, SSH, RIP</h3>
+      <strong><span style="color: #0000ff;">Go</span></strong>
+      <p>I have implemented a significant networking stack in Go. This originated with an implementation of TCP/IP, but has been expanded to include implementations of DNS and a fully RFC-compliant implementation of SSH. I am now able to SSH between virtual machines that make exclusive use of my networking stack in a fully secure manner!</p>
+      <p>My implementation of TCP/IP closely follows the latest RFC specification and is completed in Go. It handles everything from simulating routers with the RIP protocol to allowing interfaces to send and receive anything from individual packets to fully-fledged files. It additionally implements TCP retransmissions and Zero-Window Probing, and will be expanded to include congestion control in the near future.</p>
+      <p>Source will be made available publically once I complete the upcoming implementation of UDP and QUICS to be added to the stack.</p>
+    </section>
+
+    <section id="boot">
+      <h3>LevOS BootLoader</h3>
+      <strong><span style="color: #0000ff;">x86 Assembly</span></strong>
+      <p>The LevOS BootLoader is a two-stage bootloader written entirely in x86 assembly. It loads relevant sectors into the memory, integrates with BIOS functions to check hardware specifications, and initializes the system to the point that a kernel can safely be loaded. This bootloader prioritizes minimalism and efficiency and is intended to be used with the future LevOS (see below).</p>
+        </section>
+      <section id="pqc"> 
+      <h3><a href="https://github.com/levineuwirth/cs1952y-final">Post-Quantum Cryptography Profiling</a></h3>
+      <strong><span style="color: #0000ff;">C, Go, Bash, x86 Assembly</span></strong>
+      <p>My final project for Brown's CS1952y (Computer Architecture) involved research conducted on post-quantum cryptoschemes through large-scale profiling on <a href="https://docs.ccv.brown.edu/oscar">Brown's high performance computing cluster</a>. The study investigated the implications of SIMD architecture extensions on performance of lattice-based cryptosystems, with emphasis on x86-64's AVX family of extensions. Other implications were studied, including energy usage, impact on compile time and file size, comparison with aggressive compiler optimization (both with and without vectorization enabled), and effectiveness of compiler vectorization compared to manual vectorization.</p>
+    </section>
+
+    <section id="aim">
+      <h3><a href="https://github.com/levineuwirth/riskofaim">Risk of Aim</a></h3>
+      <strong><span style="color: #0000ff;">C#, GLSL</span></strong>
+      <p>Risk of Aim is an aim-training video game that incorporates roguelike elements to ensure a fun but competitive experience. The game incorporates 3D graphics and complex mechanics systems to track player health, accuracy, and activated abilities.</p>
+    </section>
+
+    <h2>Current Projects</h2>
+
+    <section id="levcs">
+      <h3>LevCS</h3>
+      <strong><span style="color: #0000ff;">Rust</span></strong>
+      <p>LevCS is my work-in-progress version control system, written in Rust. It is intended to be a fully local source-control system inspired by Git but written in a modern, memory safe language with an emphasis on performance. LeVCS also incorporates an rsync-like tool for quickly synchronizing repositories across multiple machines, and I intend for it to mold into a decentralized version control system suitable for wide adoption.</p>
+    </section>
+    <section id="udp">
+      <h3>UDP, QUICS</h3>
+      <strong><span style="color: #0000ff;">Go</span></strong>
+      <p>I will be expanding my networking stack further to implement UDP and QUICS in the summer of 2025.</p>
+      </section>
+    <section id="strat">
+      <h3>Stratagem</h3>
+      <strong><span style="color: #0000ff;">Rust</span></strong>
+      <p>Stratagem is an upcoming grand-strategy video game inspired by those of Paradox Interactive that I have been sporadically developing for nearly two years.</p>
+    </section>
+
+    <h2>Future Projects</h2>
+
+    <section id="levos">
+      <h3>LevOS <span style="color: #339966;">(to be implemented in academic year 2025-2026)</span></h3>
+      <strong><span style="color: #0000ff;">x86 Assembly, C, Rust, Go</span></strong>
+      <p>My plan for my capstone requirement at Brown University is to combine many elements of computer systems that I have implemented in different places into one enormous project. This will involve the creation of a largely working operating system. The bootloader is already implemented. Over the summer of 2025 and into the fall semester I will be adapting Weenix into a customized kernel that incorporates my own previous implementation of system calls for I/O, process management, and a customized threads library. Once this is done, I will attempt to port my TCP/IP implementation to LevOS, resulting in a full system of my own design. I also plan to experiment with various novel security and hardening features.</p>
+    </section>
+
+    <section id="math">
+      <h3>Proposed Mathematical Computing project</h3>
+      <strong><span style="color: #0000ff;">TBD</span></strong>
+      <p>I'm interested in and exploring the possibility of implementing a system similar to <a href="https://github.com/sagemath/sage">Sage</a> as a personal project, primarily in the hopes of learning more about the types of optimizations and techniques used in programming such a system.</p>
+    </section>
+  </section>
+</body>
+</html>

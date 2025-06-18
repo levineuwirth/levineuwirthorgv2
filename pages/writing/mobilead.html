@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Neuwirth's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="cv.html">CV</a> <a href="links.html">Links</a> <a href="music.html">Music</a> <a href="projects.html">Projects</a> <a href="writing.html">Writing</a></nav></header>
+<section id="about" class="about">
+<div style="text-align: center;">
+<h2 style="text-align: center;">Are advertisements the true reason for the dominance of the smartphone?</h2>
+<span style="color: #0000ff;">By: Levi Neuwirth, 17 June 2025</span></div>
+<div>
+<section class="writing"></section>
+<section id="whatsapp" class="whatsapp">
+<h2>Whatsapp has introduced advertisements</h2>
+<p>In an utterly shocking move that&nbsp;<em>absolutely no one could have seen coming,</em> <a href="https://www.whatsapp.com/">Whatsapp</a> is introducing advertisements. Following in the <a href="http://infolab.stanford.edu/~backrub/google.html">footsteps of Google</a> ("we expect that advertising funded search engines will be inherently biased towards the advertisers and away from the needs of the consumers..."), the company has transformed from a service genuinely intended to serve a beneficial purpose to society. Whether you see this as the latest incarnation of <a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a> or just another instance of fully-functional and beneficial capitalism is up to you.</p>
+<p>Whatsapp was acquired by Meta over a decade ago, so in hindsight, it's remarkable that it made it this far without serving advertisements. Essentially all of <a href="https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-First-Quarter-2025-Results/default.aspx">Meta's revenue</a> comes from advertising, so their motives in the acquisition were clear - increase the surface area, expand the playing field - whatever you call "show more ads to users."&nbsp;</p>
+<h3>Very few people will seek alternatives</h3>
+<p>When social platforms achieve high levels of market share, it becomes exceedingly difficult to find and use alternatives. Unless some standardized system like <a href="https://en.wikipedia.org/wiki/SMS">SMS</a> is in place, migrating requires that all of the folks you would like to communicate with also adopt the alternative. This is part of the reason for slow adoption of <a href="https://signal.org/#signal">Signal</a> - though this is changing now, and hopefully this be accelerated further by Whatsapp's ads (and hopefully this acceleration forces Signal to make better design choices!).</p>
+<p>This fact of prerequisite migration also makes those who are insistent on using some platform a nuisance to the folks that they would like to communicate with at times. I've yet to find a good way to rectify this - I understand why people get frustrated that I insist on usage of Signal, and at the same time I remain extremely compelled to insist on Signal for reasons precisely like this substantial downgrade to Whatsapp.</p>
+</section>
+<section id="walled" class="walled">
+<h2>The walled garden of SaaS</h2>
+<p>The trend in computing in the past decade has been to offload all serious computation from the end users. Rather than end users installing a program and doing some computation locally on their device, and doing so in the exact manner that they would like to, the new norm is for users to send data to a remote server and get the results back - this is almost like a black box. There is nothing inherently wrong with this model, denoted <a href="https://en.wikipedia.org/wiki/Software_as_a_service">SaaS</a> - there actually are hypothetical benefits, though I have not seen any literature on these. For instance, if all intensive computation can be offloaded to powerful servers running entirely on renewable energy, and only low-power devices are needed by the general public, then we could all reduce our computing-incurred carbon footprint easily. Of course, this is not really realistic, as not all servers run on renewables, renewables are not entirely "free" in terms of carbon, and there is of course a substantial embodied cost incurred in addition to the operational costs of a server... but I digress.</p>
+<p>One serious shortcoming of SaaS as commonly implemented in the real world is that at large it abstracts away knowledge of software and computing at large from the general public. <a href="https://www.iea.nl/sites/default/files/2025-03/ICILS_2023_International_Report.pdf">The United States is not moving in the right direction with respect to technological literacy</a>, and I hypothesize that SaaS is seriously contributing to this fact. It does not help that public schools are widely adopting hardware systems with artifically-imposed limitations such as <a href="https://en.wikipedia.org/wiki/Chromebook">Chromebooks</a> where SaaS is the only means by which software can be accessed. The public high school I attended <a href="https://ny02205701.schoolwires.net/cms/lib/NY02205701/Centricity/Domain/30/Chromebook%20User%20and%20Procedure%20Guide%20WSHS.pdf">did this</a>, and I have some humorous related anecdotes that I'll write about sometime in the future.</p>
+<p>Abstracting away the basic means by which software functions might be beneficial for business purposes, but it is not beneficial from a pedagogical standpoint. As a society, we should be informed on a basic level about the systems that we are interacting with, how they work, what the limitations are, and what choices we have in regards to their operation and their interaction with our personal data. By no means should everyone learn to program and learn the intricate workings of the systems that they use - but a basic understanding would likely lead to many people adopting alternatives that do not actively violate their privacy and market them as a product!</p>
+<h3>Any other walled gardens?</h3>
+<p>Many folks have heard the accusation that the Apple ecosystem is something like a walled garden. With <a href="https://en.wikipedia.org/wiki/App_Store_(Apple)">restrictions on what software can be installed</a>, and <a href="https://support.apple.com/en-gb/117767">sideloading</a> only permitted with reluctance where required by law, these accusations seem meritable. Android does better, with options like <a href="https://f-droid.org/">F-Droid</a> solving in principle the problem of software sourcing. However, <a href="https://play.google.com/store/games">Google Play</a> emulates the imposed conditions of Apple's App Store, and most users are unaware that any alternative exists!</p>
+<p>We next investigate&nbsp;<em>what</em> the actual contents of the majority of the applications on mobile devices are, whether they are originating from Google Play or the App Store. Most of these applications are a wrapper for the front-end to some SaaS service - the majority do not run computations locally on the device. In some sense, this paints the picture that mobile phones <em>are</em>;the "low-power devices" I mentioned earlier - they certainly do not have the power to do intensive computational work, whether through limitations of the battery's ability to sustain such computations for reasonable periods of time, or due to constraints in the actual capabilities of the hardware. Thus, the majority of mobile apps simply offload the computations to some remote black box server and propagate the result back to the user.&nbsp;</p>
+<p>This sort of workflow where all computation is offloaded severely diminishes the amount of control that the users of a mobile phone have over the computation they are doing. Discussion of the implications of this fact follow.</p>
+</section>
+</div>
+</section>
+<section id="dominance" class="dominance">
+<h2>The smartphone is the predominant form of computing in the United States</h2>
+<p><a href="https://www.pewresearch.org/internet/fact-sheet/mobile/">49 out of 50 Americans own a smartphone</a>, as of November 2024. Based on data from the United State government, ownership of desktop or laptop computers <a href="https://www.census.gov/newsroom/press-releases/2024/computer-internet-use-2021.html">trails behind</a>. Largely, the public sentiment in the United States seems to feel the same way: personal computing is now done on a smartphone, while laptops and desktops are used for more official purposes like schoolwork or occupational duties.</p>
+<p>What follows is that the predominant manner in which most Americans interact with software is through SaaS. Most folks in the United States have very little control over the computation that occurs on their data, the software they are interacting with, and very little ability to adopt reasonable alternatives where they exist. The consequence of this is that the providers of technology are empowered to do as they please without significant resistance from the users, where in other industries more significant resistance to imposing initiatives would be much more likely.</p>
+<h3>Example: adblocking</h3>
+<p>While the majority of Americans use mobile phones and use desktop or laptop computers, <a href="https://www.statista.com/statistics/804008/ad-blocking-reach-usage-us/">only a small minority</a> use adblocking software on either of these platforms. Notably, the number of adblock users is significantly higher on desktop or laptop devices than mobile phones. This is no surprise whatsoever - while on a desktop or laptop computer, users will generally be free to install whatever software they want, including software that blocks ads (though Google <a href="https://nuage.quimerch.com/-/ewen/articles/chrome-disabling-ublock-origin-is-a-serious-security-threat">is trying to prevent this</a>, for obvious reasons).</p>
+</section>
+<section id="sum" class="sum">
+<h2>Are advertisements the true reason for the dominance of the smartphone?</h2>
+<p>Let's face it: the prevalence of adblockers is a big problem if you're a rich tech company with many shareholders, Nearly all of Google and Meta's revenue comes from ads. Microsoft isn't far behind, surprisingly enough. Everywhere one looks, advertisements seem to be the invasive evil that keeps the digital world moving.</p>
+<p>It makes sense why it would be beneficial in multiple ways to abstract away control over and knowledge of software from the users. Instill in users that advertising is the norm, that invasive profiling is morally justified and the&nbsp;<em>only</em> business model that could ever work on the internet, and take away (or at least make it really difficult) any ability to find alternatives. Do this and riches await you!</p>
+<p>I do not believe that the smartphone was developed with the intention of creating an imposed enshittification chamber through which users cannot escape advertisements and whatever injustices are thrown at them from big tech, but I do see that this is where things have generally gone. The continued dominance of the smartphone seems to a status quo that big tech has supported and vigorously fought to uphold - it is one where users are left unaware of the possibility of any alternative and subjugated to whatever the apps they have built a reliance on like Whatsapp impose on them.</p>
+<p> What can we do? It is difficult to function in society at large these days without a smartphone, for better or for worse - my response is to try to limit the ways in which I use my phone to the minimum possible. For me, that means being able to communicate, study with Anki (because yes! this is truly essential for when I have a few minutes spare), have a book or two to read, and be able to do basic searching for information online. I use my laptop or desktop for nearly all of my computing because I can exert much more influence that way.</p>
+</section>
+</div>

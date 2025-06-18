@@ -1,0 +1,18 @@
+Hello,
+
+I have an opinion piece which I would love to submit to the Herald as an oped, however I have serious concerns about some of the Herald's policies. In particular, the following:
+
+    All submissions to The Herald cannot have been previously published elsewhere (in print or online — including personal blogs and social media), and they must be exclusive to The Herald.
+
+
+    Once your submission is published in The Herald, The Brown Daily Herald, Inc. owns the copyright to the materials. 
+
+
+I would be very interested to hear an argument for why these clauses on submissions are necessary, if there is such an argument (I presume there is). I understand the limitation of first publishing in the Herald, ie the Herald is not interested in republishing something for the second, third, millionth time, but don't see where it fairly follows that, say, if I submitted and published, I could not re-post on my personal website / blog.
+
+Following from that, I am sure that the basis by which I would be disallowed from doing so is the transfer of the copyright. I am wondering why the Herald finds this necessary and whether a more lenient solution would ever be considered. I typically release all of my writing under a copyleft license and am quite averse to the idea of not only exercising copyright in a different manner, but in one where I don't have control over said manner.  The Herald could implement a copyleft license where attribution is required if it so wished. It begs the question: is the purpose of the opeds to generate content that solely serves the interests of the Herald, or to expose the greater Brown community to ideas which should be freely shared (I don't see a better way to encourage that freedom of expression than to use a copyleft license)? Those policies strongly imply the former.
+
+Perhaps some of my concerns here would be better formatted in an oped itself which I explicitly write with the intention of relinquishing ownership of... :)
+
+I'm looking forward to any insights / response you might kindly provide.
+Levi

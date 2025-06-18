@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Neuwirth's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .about p, .projects p, .contact p {
+            margin-bottom: 15px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+ <header>
+<h1>Personal Website of Levi Neuwirth</h1>
+<nav><a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="cv.html">CV</a> <a href="links.html">Links</a> <a href="music.html">Music</a> <a href="projects.html">Projects</a> <a href="writing.html">Writing</a></nav></header>
+<div>
+<div>
+<section id="warn" class="warn">I have very strong opinions concerning just about anything related to computation, including Operating Systems. Proceed at your own risk :)</section>
+<section id="distro" class="distro">
+<h2>Which Linux Distro / WM / DE do I use?</h2>
+<p>Trick question. I use two distributions as my main operating system. On my desktop, I run <a href="https://www.gentoo.org/">Gentoo</a> with <a href="https://swaywm.org/">Sway</a>. On my laptop, I run <a href="https://archlinux.org/">Arch Linux</a> with <a href="https://i3wm.org/">i3</a>. I've been meaning to switch from i3 to Sway on my laptop for months now, primarily due to the security benefits that <a href="https://en.wikipedia.org/wiki/Wayland_(protocol)">Wayland</a> provides over <a href="https://en.wikipedia.org/wiki/X_Window_System">X11</a>, but I regrettably haven't found the time. I also interact with <a href="https://www.debian.org/">Debian</a> and <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Linux</a> fairly frequently, as they are used by systems that I ssh into at Brown's <a href="https://cs.brown.edu/about/rooms/sunlab/">Sunlab</a> and <a href="https://ccv.brown.edu/services/computing">High-Performance Computing Cluster</a> respectively.&nbsp;</p>
+<p>I don't have a strict preference between Gentoo and Arch, but I do believe that for me they are the two distributions which work best. I do find that Gentoo is maintained far better than Arch is, but this is not to say that Arch maintainers are doing a poor job!</p>
+<h3>Rolling Release? Bleeding Edge? Stability?</h3>
+<p>On the contrary, I do have a very strong preference for rolling release distributions (like Arch, Gentoo, et al.) and a strong disdain for frozen release distributions (like Debian, Ubuntu, et al.). There is very little to be gained in terms of "stability" from freezing software updates, yet this practice incurs outrageous security costs, not to speak for the inefficiency it creates within the development teams of those distributions. Rolling release and bleeding edge are often confused - you do not have to be on the bleeding edge to use a rolling release distribution. Recall that I still use X11 with Arch ;)&nbsp;</p>
+<h3>Desktop Environments?</h3>
+Once again, I have a general disdain for desktop environments, and a strong preference for window managers. However, I also understand that many folks would prefer a desktop environment in the style that they are used to from other operating systems, so I encourage work on adequate desktop environments, of which unfortunately there do not currently seem to be any. If you want a refined desktop environment, I would recommend using MacOS instead of Linux.</section>
+<ul>
+<li class="distro">The <a href="https://www.gnome.org/">GNOME</a> project seems to be led by ill-advised folks who take massive dopamine hits from subjecting the userbase to feature creep and bloat. They must have separated from GNU because GNU actually knows something about how to write quality software, while GNOME very clearly does not.</li>
+<li class="distro">I have not tried <a href="https://kde.org/">KDE</a> personally, but it seems to be affected by similar bloat.</li>
+<li class="distro">I tried using <a href="https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)">Cinnamon</a> out of curiosity, and found that it crashed roughly every 19 seconds.</li>
+</ul>
+<p>One of the principal benefits of Linux and the <a href="https://en.wikipedia.org/wiki/Unix_Philosophy">Unix philosophy</a> in general is customization and extensibility. When you use a desktop environment, this crucial aspect of the Unix philosophy is lost - control over your system is abstracted away to the authors of the environment, and they are most likely enthused by feature creep. On the other hand, a good window manager like Sway does nothing but handle windows, and otherwise gets out of your way. In general I am an advocate of an idea presented in the linked Wikipedia article: "Write programs that do one thing and do it well."&nbsp;</p>
+<p>I have not even made my case about how much more efficient use of a system with a window manager is over a desktop environment, because the above points are enough.</p>
+<section id="longbio" class="longbio">
+<h2>Other Operating Systems</h2>
+<p>In the past I have daily-driven <a href="https://en.wikipedia.org/wiki/MacOS">MacOS</a> and <a href="https://en.wikipedia.org/wiki/Windows_8.1">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/Windows_10">Windows 10</a>, and <a href="https://en.wikipedia.org/wiki/Windows_11">Windows 11</a>. My conclusions about them are as follows:</p>
+<ul>
+<li><strong>MacOS</strong> is a fine operating system, but unfortunately subjected to <a href="https://www.privacyguides.org/en/os/macos-overview/">telemetry</a> and <a href="https://en.wikipedia.org/wiki/PRISM">severe privacy violations</a>.
+<ul>
+<li>If you don't mind those privacy concerns, and want a desktop environment that works, it is a good choice.</li>
+<li>It's far better than Windows in terms of privacy, and also just about any other criterion.</li>
+<li>At least some source is available (<a href="https://github.com/apple-oss-distributions/xnu">XNU</a>)</li>
+<li>It's a good place to learn about Unix commands and structure before switching to Linux.</li>
+</ul>
+</li>
+<li><strong>Windows</strong> is perhaps the worst contribution to technology made by any organization in the history of technology.
+<ul>
+<li>Everything about Windows is about bloat, <a href="https://en.wikipedia.org/wiki/Enshittification">enshittification</a>, advertising, telemetry, and inefficiency.</li>
+<li>I remember back when the File Explorer actually did its job...</li>
+<li>Seriously, Microsoft? You can't uninstall <a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Edge</a>, which itself is just a useless fork of Chromium?</li>
+<li>You are a commodity <a href="https://www.theverge.com/2024/4/24/24138949/microsoft-windows-11-start-menu-ads-recommendations-setting-disable">to be bought and sold</a> if you use Windows.</li>
+<li>Microsoft implements the C/C++ standard libraries just to then create <a href="https://en.wikipedia.org/wiki/C%EF%BC%83_(programming_language)">a copy</a> of <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">another programming language</a> (clearly they only imitate instead of create), just to then <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/?form=MA13LH">run an entire web brower</a> with every program instead of using the programming language they created?</li>
+<li>"Security" is just a buzz term for Microsoft; they actually care about <a href="https://www.techradar.com/news/windows-11-system-requirements-are-bad-news-for-old-laptops-and-pcs">forcing you to buy new hardware when your old hardware would've done fine</a>.</li>
+<li>Windows BitLocker encryption was <a href="https://cybersecuritynews.com/windows-bitlocker-vulnerability-exploited/">clearly not written</a> by anyone who knows about how to do encryption.</li>
+<li>Windows is ransomware: <a href="https://neowin.net/news/windows-11-is-now-automatically-enabling-onedrive-folder-backup-without-asking-permission">pay us, or your files that we discretely moved to OneDrive are gone</a></li>
+<li>Any computer that runs Windows can be hijacked at any moment to forcibly install updates.</li>
+<li>You can no longer use Windows without an account and internet connection.</li>
+<li><a href="https://en.wikipedia.org/wiki/NTFS">NTFS</a> is far from "new technology"; it should be called Obsolete Technology filesystem instead.</li>
+<li>Windows 10 was a major tragedy when compared to Windows 8.1 and prior versions. It introduced widespread telemetry out of the box and advertising.</li>
+<li>Windows 11 was even worse, pushing useless <a href="https://en.wikipedia.org/wiki/Microsoft_Copilot">"AI" tech</a> and horrifically insecure and indignant dystopian nightmares like <a href="https://en.wikipedia.org/wiki/Microsoft_Recall">Recall</a>.</li>
+<li>If you have a choice between using Windows and just not using a computer, I would choose not using a computer.</li>
+</ul>
+</li>
+<li><strong>Weenix</strong> is the operating system kernel that I wrote in the first half of 2025.
+<ul>
+<li>It's better than Windows, which is essentially saying nothing.</li>
+<li>It can't do networking, nor anything beyond simple text graphics.</li>
+<li>It can run just about any simple C program in userspace, however.</li>
+<li>It will be revised in the next 12 months to do much more.</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="aboutweb" class="aboutweb">
+<h2>Electron</h2>
+<p><a href="https://www.electronjs.org/">Electron</a> is the worst development ever to occur in the realm of software. I vehemently refuse to use any program that incorporates electron (which I say is unworthy of capitalization) wherever possible, and I urge you to join me. Not only has electron significantly contributed to pointless software bloat and remarkable inefficiency - it has also distilled laziness and terrible programming habits into the workflows of many organizations and developers. If you take pride in writing code, whether for fun or for a living, do not use electron!</p>
+<p>Anyone who programs with electron is essentially saying "I am so lazy or incompetent as a programmer that I can't take time to read documentation about native graphics frameworks on any platform and use them, so I would rather bundle a huge codebase (Chromium) which I've probably never seen, don't know anything about the inner workings of, and don't care enough to investigate, instead of taking the time to write a program the real way. Rather than build a program which uses reasonable amounts of resources and does not constrain the system, I would prefer to use hundreds of megabytes or even gigabytes of memory, incredible amounts of CPU utilization, and massively bloated binary sizes just to save myself a little bit of effort."&nbsp;</p>
+<ul>
+<li>We should be prioritizing efficiency when energy consumption is significantly contributing to the <a href="https://en.wikipedia.org/wiki/Climate_change">greatest existential threat of our time</a>.
+<ul>
+<li>Note that I do not condone the usage of the terms "global warming" nor "climate change" on this Wikipedia page.</li>
+</ul>
+</li>
+<li>Although I think Signal does an admirable thing in general, I refuse to run their desktop client.
+<ul>
+<li>Their client <a href="https://github.com/signalapp/Signal-iOS/issues/4590">does other stupid things</a>, in addition to being written in electron.</li>
+</ul>
+</li>
+<li>Seriously, Microsoft? IDEs are supposed to be <a href="https://www.gnu.org/software/emacs/">performant</a>, not <a href="https://code.visualstudio.com/">bundle an entire web browser and telemetry</a> just for basic text editing...</li>
+</ul>
+</section>
+<section id="fun" class="fun">
+<h2>Programming Languages</h2>
+<ul>
+<li>My favorite programming languages are <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a> and <a href="https://www.rust-lang.org/">Rust</a>.
+<ul>
+<li>Good C code is elegant yet easy to understand, and C has remained a very simple language in contrast to its <a href="https://en.wikipedia.org/wiki/C%2B%2B">hideous relative</a>.</li>
+<li>Rust makes writing memory safe code easy, and takes the best parts of object-oriented programming without forcing that paradigm on anyone.&nbsp;</li>
+<li>Performance and efficient resource usage are important to me, if you couldn't tell from my rant about electron.</li>
+</ul>
+</li>
+<li>I think that there are many other fine programming languages, but they are generally less ubiquitously useful that C and Rust.
+<ul>
+<li><a href="https://go.dev/">Go</a> is a phenomenal language that I try to use where I used to use Python, with really exceptional concurrency.</li>
+<li>That's not to say that <a href="https://www.python.org/">Python</a> is a bad language - it is quite nice for AI-related tasks, scientific computing, within the shell, etc.</li>
+<li>I prefer to use Python over <a href="https://www.r-project.org/">R</a> for statistical computing, but use both.</li>
+<li>I quite like <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>, but the parentheses syntax does drive me crazy.</li>
+<li>I have worked in both <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> and <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> in the past, and think both are fairly nice to work with in certain use cases, but I would now go with Go or Rust in just about any of the cases where I used to use them.</li>
+<li>I don't know much about <a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig</a> yet, but I'm learning it and it seems pretty sweet.</li>
+</ul>
+</li>
+<li>There are a few languages that I think are absolutely awful and try to avoid using where possible.
+<ul>
+<li>C++ is insanely bloated, makes it easy to write unsafe code, and is just an unpleasant experience in general. I will use Rust anywhere that C++ might be used when given the choice, but unfortunately I'm still required to use C++ in many instances.</li>
+<li>I understand where the design choices of JavaScript come from, but I find working with the language absolutely irritable and avoid using it wherever possible.</li>
+<li>I find TypeScript to be a slight improvement over JavaScript, but still absolutely irritable to use.</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Assembly_language">Assembly</a> depends a lot on what ISA is being used.
+<ul>
+<li>I find <a href="https://en.wikipedia.org/wiki/RISC-V">RISC-V</a> assembly a great pleasure to work with. It's easy to understand, very well documented, and the design choices are excellent and explained thoroughly and convincingly in the documentation.</li>
+<li>On the other hand I quite dislike working with <a href="https://en.wikipedia.org/wiki/X86-64">x86</a> assembly, though I have gotten proficient at it from developing a kernel. The ISA is in general bloated and that makes it very nice for compilers but painful for humans.</li>
+<li>I haven't interacted with ARM assembly before.</li>
+</ul>
+</li>
+<li>I am not a blind advocate of any programming paradigm.
+<ul>
+<li>I quite like functional programming, and enjoy writing functional code in general, but I also acknowledge that it is not well-suited for all tasks.</li>
+<li>Similarly, I somewhat dislike writing pure object-oriented code (thinking Java style here), which feels bloated, but I also acknowledge that it is very well-suited for some tasks.</li>
+<li>I appreciate languages like Go, Python, and Rust allowing for usage of multiple paradigms.</li>
+</ul>
+</li>
+</ul>
+</section>
+</div>
+</div>
+</div>
